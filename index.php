@@ -47,14 +47,14 @@ $movies=[
     <title>MOvies</title>
 </head>
 <body>
-    <?php foreach($movies as $movie):?>
+    <?php foreach($movies as $movie){?>
         <article>
-            <h2><?= $movie->id?>.<?= $movie->title?></h2>
-            <p><?= $movie->getAbstract(70)?></p>
-            <p><?= $movie->year?></p>
-            <p><strong><?= $movie->originalLanguage?></strong></p>
-            <strong><?= $movie->genre?></strong>
+            <h2><?php echo $movie->id?>.<?= $movie->title?></h2>
+            <p><?php echo $movie->getAbstract(70)?></p>
+            <p><?php echo $movie->year?></p>
+            <p><strong><?php echo $movie->originalLanguage?></strong></p>
+            <strong><?php echo $movie->genre?></strong>
         </article>
-    <? endforeach;?>
+    <? }?>
 </body>
 </html>

@@ -49,11 +49,11 @@ $movies=[
 <body>
     <?php foreach($movies as $movie){?>
         <article>
-            <h2><?php echo $movie->id?>.<?= $movie->title?></h2>
-            <p><?php echo $movie->getAbstract(70)?></p>
-            <p><?php echo $movie->year?></p>
-            <p><strong><?php echo $movie->originalLanguage?></strong></p>
-            <strong><?php echo $movie->genre?></strong>
+            <h2><?php echo $movie->id;?>.<?= $movie->title;?></h2>
+            <p><?php echo $movie->getAbstract(70);?></p>
+            <p><?php echo $movie->year;?></p>
+            <p><strong><?php echo $movie->originalLanguage;?></strong></p>
+            <strong><?php echo $movie->genre;?></strong>
         </article>
     <? }?>
 </body>

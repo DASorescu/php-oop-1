@@ -55,6 +55,6 @@ $movies=[
             <p><strong><?php echo $movie->originalLanguage;?></strong></p>
             <strong><?php echo $movie->genre;?></strong>
         </article>
-    <? }?>
+    <?php }?>
 </body>
 </html>
